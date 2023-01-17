@@ -127,6 +127,38 @@ header p{
     text-align: right;
 }
 
+/* Footer */
 .attribution a {
     color: var(--Blue);    
+}
+
+/* Start Desktop deign */
+@media (min-width: 600px) {
+    header{
+        max-width: 52.5rem;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 3.8rem;
+    }
+
+    h2{
+        font-size: 3.8rem;
+    }
+}
+
+@media (min-width: 780px) {
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+
+        max-width: 90rem;
+    }
+
+    .two-cards{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
 }
