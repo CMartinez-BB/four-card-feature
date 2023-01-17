@@ -16,6 +16,11 @@
 }
 
 /* Generals */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
 *{
     margin: 0;
     bottom: 0;
@@ -23,14 +28,103 @@
 
 body{
     font-family: var(--fontFamily);
-    font-size: 15px;
+    font-size: 1.5rem;
     box-sizing: border-box;
     color: var(--veryDarkBlue);
     background-color: var(--veryLightGray);
 }
 
+h1{
+    font-weight: 200;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+}
+
+header p{
+    font-size: 1.6rem;
+    color: var(--grayisBlue);
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+}
+
+/* Start styles Mobile first */
+.container{
+    margin: 9rem 3rem;
+}
+
+/* Header Mobile first */
+
 .attribution { 
     font-size: 11px; text-align: center; 
+}
+
+/* Cards container mobile first */
+.card-container{
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.cards{
+    border-radius: 0.8rem;
+    background-color: var(--veryLightGray);
+    box-shadow: 3px 10px 10px var(--grayisBlue);
+
+    margin-bottom: 3rem;
+
+    min-width: 31rem;
+    max-width: 50rem;
+    height: 22.2rem;
+
+    overflow: hidden;
+}
+
+.card1 .line{
+    background-color: var(--Cyan);
+    height: 0.4rem;
+
+}
+
+.card2 .line{
+    background-color: var(--Red);
+    height: 0.4rem;
+}
+
+.card3 .line{
+    background-color: var(--Orange);
+    height: 0.4rem;
+}
+
+.card4 .line{
+    background-color: var(--Blue);
+    height: 0.4rem;
+}
+
+.content{
+    padding: 3rem;
+}
+
+.content h3{
+    margin-top: 0;
+}
+
+.content p{
+    color: var(--grayisBlue);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.image{
+    text-align: right;
 }
 
 .attribution a {
