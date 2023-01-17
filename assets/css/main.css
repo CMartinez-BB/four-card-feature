@@ -27,7 +27,6 @@ html{
 }
 
 body{
-    overflow-y: hidden;
     font-family: var(--fontFamily);
     font-size: 1.5rem;
     box-sizing: border-box;
@@ -39,12 +38,16 @@ h1{
     font-weight: 200;
     font-size: 2.4rem;
     margin: 0;
+
+    animation: leftRigth 1000ms;
 }
 
 h2{
     font-size: 2.4rem;
     font-weight: 600;
     margin: 0;
+
+    animation: rightLeft 1000ms;
 }
 
 header{
@@ -56,6 +59,8 @@ header p{
     color: var(--grayisBlue);
     margin-bottom: 7rem;
     margin-top: 1rem;
+
+    animation: upDown 1000ms;
 }
 
 /* Start styles Mobile first */
@@ -73,6 +78,8 @@ header p{
 .card-container{
     max-width: 50rem;
     margin: 0 auto;
+
+    animation: downUp 1000ms;
 }
 
 .cards{
@@ -175,5 +182,42 @@ header p{
     .cards{
         width: 35.5rem;
         height: 25.4rem;
+    }
+}
+
+/* Animations */
+@keyframes upDown{
+    0%{
+        transform: translateY(-50rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes downUp{
+    0%{
+        transform: translateY(50rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes leftRigth{
+    0%{
+        transform: translateX(-50rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes rightLeft{
+    0%{
+        transform: translateX(50rem);
+    }
+    100%{
+        transform: translateX(0rem);
     }
 }
